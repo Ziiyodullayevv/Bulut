@@ -11,7 +11,7 @@ export default function App() {
     // 3 soniya kutish
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer); // Komponent unmount bo'lsa tozalash
   }, []);
