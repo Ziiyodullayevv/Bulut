@@ -16,7 +16,7 @@ export default function About() {
 
           {/* Matn qismi */}
           <div className='md:col-span-7 flex flex-col justify-center'>
-            <h3 className='text-3xl sm:text-5xl mb-4'>Korxona haqida</h3>
+            <h3 className='text-2xl sm:text-5xl mb-4'>Korxona haqida</h3>
             <ol className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
