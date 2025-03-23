@@ -31,18 +31,18 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Shaffof overlay */}
-      <span className='bg-white/30 backdrop-blur-sm absolute left-0 right-0 bottom-0 top-0'></span>
+      <span className='bg-white/30 absolute left-0 right-0 bottom-0 top-0'></span>
 
       {/* Kontent */}
-      <div className='max-w-[1024px] mx-auto px-6 flex-1 flex relative z-10'>
+      <div className='max-w-[1024px] mx-auto  px-5 flex-1 flex relative z-10'>
         <div className='flex flex-col items-center gap-14 justify-evenly flex-1'>
           <div>
-            <h1 className='text-5xl font-semibold leading-22 text-center'>
+            <h1 className='text-3xl sm:text-5xl leading-14 font-semibold sm:leading-22 text-center'>
               Sanitariya-gigiyena qog'oz asosi, to'g'ridan-to'g'ri ishlab
               chiqaruvchidan.
             </h1>
 
-            <div className='flex font-semibold text-black/80 mt-6 justify-center text-3xl gap-10'>
+            <div className='flex flex-col sm:flex-row mt-10 text-center font-semibold text-black/80 justify-center sm:text-xl md:text-2xl gap-5 sm:gap-10'>
               <p>
                 <strong className='font-bold'>100%</strong> Sellyulozadan
               </p>
