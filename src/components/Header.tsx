@@ -1,5 +1,6 @@
 import Selected from './Selected';
 import DriwerComponent from './Drawer';
+import { t } from 'i18next';
 
 export default function Header() {
   return (
@@ -10,16 +11,16 @@ export default function Header() {
 
           <nav className='hidden lg:flex gap-10'>
             <a className='hover:text-black text-gray-700' href='#'>
-              Buyurtma qilish
+              {t('header.a1')}
             </a>
             <a className='hover:text-black text-gray-700' href='#'>
-              Hamkorlarimiz
+              {t('header.a2')}
             </a>
             <a className='hover:text-black text-gray-700' href='#'>
-              Biz haqimizda
+              {t('header.a3')}
             </a>
             <a className='hover:text-black text-gray-700' href='#'>
-              Bog‘lanish
+              {t('header.a4')}
             </a>
           </nav>
 

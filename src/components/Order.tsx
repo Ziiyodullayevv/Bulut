@@ -1,13 +1,14 @@
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { t } from 'i18next';
 
 export default function Order() {
   return (
-    <section className='py-10 sm:py-20'>
+    <section id='order' className='py-10 sm:py-20'>
       <div className='max-w-[1024px] mx-auto px-6'>
         <div className='flex justify-center'>
           <h2 className='text-center max-w-xl sm:leading-14 text-2xl sm:text-5xl'>
-            Buyurtmangizning narxini hisoblash.
+            {t('order.title')}
           </h2>
         </div>
 
@@ -15,10 +16,10 @@ export default function Order() {
           <Input
             className='h-12 sm:h-14 px-4 sm:placeholder:text-lg'
             type='text'
-            placeholder='Sizning kontaktlaringiz whatsapp/telegram/gmail'
+            placeholder={t('order.placeholder')}
           />
           <Button className='h-12 w-40 text-lg cursor-pointer'>
-            Hisoblash
+            {t('order.btn')}
           </Button>
         </div>
       </div>

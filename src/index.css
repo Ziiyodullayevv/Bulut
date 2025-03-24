@@ -124,3 +124,7 @@
 @theme {
   --font-popins: 'Poppins', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

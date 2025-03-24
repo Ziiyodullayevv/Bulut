@@ -1,8 +1,9 @@
+import { t } from 'i18next';
 import { Dot } from 'lucide-react';
 
 export default function About() {
   return (
-    <section className='py-10 sm:py-20'>
+    <section id='about' className='py-10 sm:py-20'>
       <div className='max-w-[1024px] mx-auto px-6'>
         <div className='grid grid-cols-1 md:grid-cols-12 gap-8'>
           {/* Rasm qismi */}
@@ -16,28 +17,23 @@ export default function About() {
 
           {/* Matn qismi */}
           <div className='md:col-span-7 flex flex-col justify-center'>
-            <h3 className='text-2xl sm:text-5xl mb-4'>Korxona haqida</h3>
+            <h3 className='text-2xl sm:text-5xl mb-4'>{t('about.title')}</h3>
             <ol className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Biz 2018-yildan beri sanitariya-gigiyena qog‘ozi asosini ishlab
-                chiqarish bilan shug‘ullanamiz.
+                {t('about.desc1')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Qisqa muddat ichida mahalliy bozorda yetakchilardan biriga
-                aylanishga erishib, qog‘oz ishlab chiqaruvchi eng yaxshi 3
-                kompaniya qatoriga kirdik.
+                {t('about.desc2')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Yosh va faol jamoamiz barcha mijozlarimizni mamnun qilishga
-                intiladi.
+                {t('about.desc3')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Jamoamiz ish jarayonlari va mahsulotlarimiz sifatini stabil
-                ravishda yaxshilashga intiladi.
+                {t('about.desc4')}
               </li>
             </ol>
           </div>

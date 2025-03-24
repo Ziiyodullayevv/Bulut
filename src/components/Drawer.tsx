@@ -11,6 +11,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { AlignRight } from 'lucide-react';
 import Selected from './Selected';
+import { t } from 'i18next';
 
 export default function DriwerComponent() {
   return (
@@ -30,7 +31,7 @@ export default function DriwerComponent() {
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
                   href='#'
                 >
-                  Buyurtma qilish
+                  {t('header.a1')}
                 </a>
               </DrawerClose>
 
@@ -39,7 +40,7 @@ export default function DriwerComponent() {
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
                   href='#'
                 >
-                  Hamkorlarimiz
+                  {t('header.a2')}
                 </a>
               </DrawerClose>
 
@@ -48,7 +49,7 @@ export default function DriwerComponent() {
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
                   href='#'
                 >
-                  Biz haqimizda
+                  {t('header.a3')}
                 </a>
               </DrawerClose>
               <DrawerClose>
@@ -56,7 +57,7 @@ export default function DriwerComponent() {
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
                   href='#'
                 >
-                  Bog‘lanish
+                  {t('header.a4')}
                 </a>
               </DrawerClose>
             </nav>

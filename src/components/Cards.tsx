@@ -1,8 +1,9 @@
+import { t } from 'i18next';
 import { Dot } from 'lucide-react';
 
 export default function Cards() {
   return (
-    <section className='py-10 sm:py-20'>
+    <section id='cards' className='py-10 sm:py-20'>
       <div className='max-w-[1024px] mx-auto px-4 sm:px-6'>
         {/* Birinchi bo‘lim */}
         <div className='grid grid-cols-12 gap-4 sm:gap-8 items-center'>
@@ -11,20 +12,20 @@ export default function Cards() {
           </div>
           <div className='col-span-12 md:col-span-7 flex flex-col'>
             <h3 className='text-2xl sm:text-5xl mb-4'>
-              Tarkib asosi 100% sellyuloza
+              {t('cards.card1.title')}
             </h3>
             <ol className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Rossiya xvoy va bargli sellyulozasi
+                {t('cards.card1.desc1')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Sellyulozani bosqichma-bosqich maydalash
+                {t('cards.card1.desc2')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Hech qanday makulatura qo‘shimchalari yo‘q
+                {t('cards.card1.desc3')}
               </li>
             </ol>
           </div>
@@ -41,27 +42,29 @@ export default function Cards() {
           </div>
 
           <div className='col-span-12 md:col-span-7 flex flex-col'>
-            <h3 className='text-2xl sm:text-5xl mb-4'>Xususiyatlari</h3>
+            <h3 className='text-2xl sm:text-5xl mb-4'>
+              {t('cards.card2.title')}
+            </h3>
             <ol className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Har bir 1 m² da 15-24 g qog‘oz
+                {t('cards.card2.desc1')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                GOST 3398:2019 bo‘yicha ishlab chiqarish
+                {t('cards.card2.desc2')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Yevropa kimyoviy moddalar
+                {t('cards.card2.desc3')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                1-2-3 qatlamli
+                {t('cards.card2.desc4')}
               </li>
               <li className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
-                Diametri 1200 mm, kengligi 2000 mm gacha
+                {t('cards.card2.desc5')}
               </li>
             </ol>
           </div>

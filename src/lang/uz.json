@@ -1,0 +1,62 @@
+{
+  "header": {
+    "a1": "Buyurtma qilish",
+    "a2": "Hamkorlarimiz",
+    "a3": "Biz haqimizda",
+    "a4": "Bog‘lanish"
+  },
+  "lang": {
+    "en": "Englizcha",
+    "ru": "Ruscha",
+    "uz": "O‘zbekcha"
+  },
+  "hero": {
+    "title": "Sanitariya-gigiyena qog'oz asosi, to'g'ridan-to'g'ri ishlab chiqaruvchidan.",
+    "subTitle1": " 100% Sellyulozadan",
+    "subTitle2": "Zichligi 15 g/m² – 24 g/m²"
+  },
+  "order": {
+    "title": "Buyurtmangizning narxini hisoblash.",
+    "placeholder": "Sizning kontaktlaringiz whatsapp/telegram/gmail",
+    "btn": "Hisoblash"
+  },
+  "cards": {
+    "card1": {
+      "title": "Tarkib asosi 100% sellyuloza",
+      "desc1": "Rossiya xvoy va bargli sellyulozasi",
+      "desc2": "Sellyulozani bosqichma-bosqich maydalash",
+      "desc3": "Hech qanday makulatura qo‘shimchalari yo‘q"
+    },
+    "card2": {
+      "title": "Xususiyatlari",
+      "desc1": "Har bir 1 m² da 15-24 g qog‘oz",
+      "desc2": "GOST 3398:2019 bo‘yicha ishlab chiqarish",
+      "desc3": "Yevropa kimyoviy moddalar",
+      "desc4": "1-2-3 qatlamli",
+      "desc5": "Diametri 1200 mm; kengligi 2000 mm gacha"
+    }
+  },
+  "export": {
+    "title": "Mahsulotimiz eksport qilinadigan davlatlar qaysilar?"
+  },
+  "about": {
+    "title": "Korxona haqida",
+    "desc1": "Biz 2018-yildan beri sanitariya-gigiyena qog‘ozi asosini ishlab chiqarish bilan shug‘ullanamiz.",
+    "desc2": "Qisqa muddat ichida mahalliy bozorda yetakchilardan biriga aylanishga erishib, qog‘oz ishlab chiqaruvchi eng yaxshi 3 kompaniya qatoriga kirdik.",
+    "desc3": "Yosh va faol jamoamiz barcha mijozlarimizni mamnun qilishga intiladi.",
+    "desc4": "Jamoamiz  ish jarayonlari va mahsulotlarimiz sifatini stabil ravishda yaxshilashga intiladi."
+  },
+  "questions": {
+    "title": "Buyurtmangiz narxini hisoblab beramiz va barcha savollaringiz bo‘yicha maslahat beramiz.",
+    "placeholder1": "Ism",
+    "placeholder2": "whatsapp/telegram",
+    "placeholder3": "gmail",
+    "btn": "Yuborish"
+  },
+  "contacts": {
+    "title": "Bizning kontaktlar:",
+    "whatsapp": "whatsapp",
+    "telegram": "telegram",
+    "gmail": "elektron pochta:"
+  }
+}

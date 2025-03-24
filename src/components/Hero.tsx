@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ScrollIndicator from './ScrollIndicator';
+import { t } from 'i18next';
 
 const images = ['/1.jpg', '/2.jpg', '/3.jpg', '/4.jpg', '/5.jpg'];
 
@@ -38,18 +39,12 @@ export default function Hero() {
         <div className='flex flex-col items-center gap-14 justify-evenly flex-1'>
           <div>
             <h1 className='text-3xl sm:text-5xl leading-14 font-semibold sm:leading-22 text-center'>
-              Sanitariya-gigiyena qog'oz asosi, to'g'ridan-to'g'ri ishlab
-              chiqaruvchidan.
+              {t('hero.title')}
             </h1>
 
             <div className='flex flex-col sm:flex-row mt-10 text-center font-semibold text-black/80 justify-center sm:text-xl md:text-2xl gap-5 sm:gap-10'>
-              <p>
-                <strong className='font-bold'>100%</strong> Sellyulozadan
-              </p>
-              <p>
-                Zichligi <strong className='font-bold'>15 g/m²</strong> –{' '}
-                <strong className='font-bold'>24 g/m²</strong>
-              </p>
+              <p>{t('hero.subTitle1')}</p>
+              <p>{t('hero.subTitle2')}</p>
             </div>
           </div>
 

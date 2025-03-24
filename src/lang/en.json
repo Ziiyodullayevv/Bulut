@@ -1,0 +1,62 @@
+{
+  "header": {
+    "a1": "Order",
+    "a2": "Our partners",
+    "a3": "About us",
+    "a4": "Contact"
+  },
+  "lang": {
+    "en": "English",
+    "ru": "Russian",
+    "uz": "Uzbek"
+  },
+  "hero": {
+    "title": "Sanitary and hygiene base paper, directly from the manufacturer.",
+    "subTitle1": "100% cellulose-based foundation",
+    "subTitle2": "Density from 15 g/m² to 24 g/m²."
+  },
+  "order": {
+    "title": "Calculate the cost of your order.",
+    "placeholder": "Your contacts whatsapp/telegram/gmail",
+    "btn": "Calculate"
+  },
+  "cards": {
+    "card1": {
+      "title": "100% cellulose base",
+      "desc1": "Russian softwood and hardwood cellulose",
+      "desc2": "Step-by-step cellulose refining",
+      "desc3": "No recycled paper impurities"
+    },
+    "card2": {
+      "title": "Specifications",
+      "desc1": "15-24 g of paper per 1 m²",
+      "desc2": "Paper production according to GOST 3398:2019",
+      "desc3": "European chemicals",
+      "desc4": "1-2-3 layers",
+      "desc5": "Diameter: 1200 mm; Width: up to 2000 mm"
+    }
+  },
+  "export": {
+    "title": "Which countries do we export our products to?"
+  },
+  "about": {
+    "title": "About the company",
+    "desc1": "We have been manufacturing sanitary and hygiene base paper since 2018.",
+    "desc2": "In a short period, we became a leader in the local market, ranking among the top 3 paper manufacturers.",
+    "desc3": "Our young and dynamic team strives to keep all our customers satisfied.",
+    "desc4": "Our team consistently works to improve our processes and the quality of our products day by day."
+  },
+  "questions": {
+    "title": "We will calculate the cost of your order and provide consultation on all your questions.",
+    "placeholder1": "Name",
+    "placeholder2": "whatsapp/telegram",
+    "placeholder3": "gmail",
+    "btn": "Send"
+  },
+  "contacts": {
+    "title": "Our contacts:",
+    "desc1": "whatsapp",
+    "desc2": "telegram",
+    "desc3": "gmail"
+  }
+}

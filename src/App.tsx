@@ -3,30 +3,23 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Loading from './components/Loading';
 import Main from './components/Main';
+import './i18n'; // i18n'ni faqat bir marta import qilish
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // 3 soniya kutish
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer); // Komponent unmount bo'lsa tozalash
+    const timer = setTimeout(() => setIsLoading(false), 2000);
+    return () => clearTimeout(timer);
   }, []);
 
-  return (
+  return isLoading ? (
+    <Loading />
+  ) : (
     <>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <>
-          <Header />
-          <Main />
-          <Footer />
-        </>
-      )}
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }
