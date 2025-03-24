@@ -3,7 +3,7 @@ import MotionText from './MotionText';
 
 export default function Footer() {
   return (
-    <footer className='py-10'>
+    <footer id='contact' className='py-10'>
       <div className='max-w-[1024px] mx-auto px-5 md:px-10'>
         <MotionText className='text-2xl sm:text-4xl text-center'>
           {t('contacts.title')}

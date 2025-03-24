@@ -29,7 +29,7 @@ export default function DriwerComponent() {
               <DrawerClose>
                 <a
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                  href='#'
+                  href='#order'
                 >
                   {t('header.a1')}
                 </a>
@@ -38,7 +38,7 @@ export default function DriwerComponent() {
               <DrawerClose>
                 <a
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                  href='#'
+                  href='#partners'
                 >
                   {t('header.a2')}
                 </a>
@@ -47,7 +47,7 @@ export default function DriwerComponent() {
               <DrawerClose>
                 <a
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                  href='#'
+                  href='#about'
                 >
                   {t('header.a3')}
                 </a>
@@ -55,7 +55,7 @@ export default function DriwerComponent() {
               <DrawerClose>
                 <a
                   className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                  href='#'
+                  href='#contact'
                 >
                   {t('header.a4')}
                 </a>

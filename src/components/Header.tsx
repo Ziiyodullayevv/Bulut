@@ -10,16 +10,16 @@ export default function Header() {
           <img className='w-25' src='/logo.svg' alt='logo' />
 
           <nav className='hidden lg:flex gap-10'>
-            <a className='hover:text-black text-gray-700' href='#'>
+            <a className='hover:text-black text-gray-700' href='#order'>
               {t('header.a1')}
             </a>
-            <a className='hover:text-black text-gray-700' href='#'>
+            <a className='hover:text-black text-gray-700' href='#partners'>
               {t('header.a2')}
             </a>
-            <a className='hover:text-black text-gray-700' href='#'>
+            <a className='hover:text-black text-gray-700' href='#about'>
               {t('header.a3')}
             </a>
-            <a className='hover:text-black text-gray-700' href='#'>
+            <a className='hover:text-black text-gray-700' href='#contact'>
               {t('header.a4')}
             </a>
           </nav>
