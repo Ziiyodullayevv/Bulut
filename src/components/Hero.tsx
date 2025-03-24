@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ScrollIndicator from './ScrollIndicator';
 import { t } from 'i18next';
+import MotionText from './MotionText';
 
 const images = ['/1.jpg', '/2.jpg', '/3.jpg', '/4.jpg', '/5.jpg'];
 
@@ -38,13 +39,13 @@ export default function Hero() {
       <div className='max-w-[1024px] mx-auto  px-5 flex-1 flex relative z-10'>
         <div className='flex flex-col items-center gap-14 justify-evenly flex-1'>
           <div>
-            <h1 className='text-3xl sm:text-5xl leading-14 font-semibold sm:leading-22 text-center'>
+            <MotionText className='text-3xl sm:text-5xl leading-14 font-semibold sm:leading-22 text-center'>
               {t('hero.title')}
-            </h1>
+            </MotionText>
 
             <div className='flex flex-col sm:flex-row mt-10 text-center font-semibold text-black/80 justify-center sm:text-xl md:text-2xl gap-5 sm:gap-10'>
-              <p>{t('hero.subTitle1')}</p>
-              <p>{t('hero.subTitle2')}</p>
+              <MotionText delay={0.4}>{t('hero.subTitle1')}</MotionText>
+              <MotionText delay={0.4}>{t('hero.subTitle2')}</MotionText>
             </div>
           </div>
 

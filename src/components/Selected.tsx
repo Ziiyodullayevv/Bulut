@@ -5,7 +5,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 type Props = {
@@ -15,15 +15,18 @@ type Props = {
 
 export default function Selected({ width, height }: Props) {
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+  const currentLang = localStorage.getItem('lang') || i18n.language;
+  const [language] = useState(currentLang);
 
-  useEffect(() => {
-    localStorage.setItem('lang', language);
-    i18n.changeLanguage(language);
-  }, [language, i18n]);
+  const handleChange = (lang: string) => {
+    localStorage.setItem('lang', lang);
+    i18n.changeLanguage(lang).then(() => {
+      window.location.reload(); // Sahifani qayta yuklash
+    });
+  };
 
   return (
-    <Select value={language} onValueChange={setLanguage}>
+    <Select value={language} onValueChange={handleChange}>
       <SelectTrigger style={{ width, height }}>
         <SelectValue placeholder={t('lang.placeholder')} />
       </SelectTrigger>

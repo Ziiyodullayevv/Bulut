@@ -55,8 +55,8 @@
   },
   "contacts": {
     "title": "Наши контакты:",
-    "whatsapp": "whatsapp",
-    "telegram": "telegram",
-    "gmail": "эл-почта:"
+    "desc1": "whatsapp",
+    "desc2": "telegram",
+    "desc3": "эл-почта"
   }
 }

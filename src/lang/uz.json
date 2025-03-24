@@ -55,8 +55,8 @@
   },
   "contacts": {
     "title": "Bizning kontaktlar:",
-    "whatsapp": "whatsapp",
-    "telegram": "telegram",
-    "gmail": "elektron pochta:"
+    "desc1": "whatsapp",
+    "desc2": "telegram",
+    "desc3": "elektron pochta:"
   }
 }

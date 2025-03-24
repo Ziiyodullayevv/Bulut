@@ -1,5 +1,7 @@
 import { t } from 'i18next';
 import { Dot } from 'lucide-react';
+import MotionText from './MotionText';
+import MotionCard from './MotionCard';
 
 export default function About() {
   return (
@@ -7,35 +9,40 @@ export default function About() {
       <div className='max-w-[1024px] mx-auto px-6'>
         <div className='grid grid-cols-1 md:grid-cols-12 gap-8'>
           {/* Rasm qismi */}
-          <div className='rounded-2xl overflow-hidden md:col-span-5 flex justify-center'>
+          <MotionCard
+            delay={0.5}
+            className='rounded-2xl overflow-hidden md:col-span-5 flex justify-center'
+          >
             <img
               className='w-full h-auto md:h-full object-cover'
               src='/4.jpg'
               alt='jpg'
             />
-          </div>
+          </MotionCard>
 
           {/* Matn qismi */}
           <div className='md:col-span-7 flex flex-col justify-center'>
-            <h3 className='text-2xl sm:text-5xl mb-4'>{t('about.title')}</h3>
-            <ol className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
-              <li className='flex items-center gap-2'>
+            <MotionText className='text-2xl sm:text-5xl mb-4'>
+              {t('about.title')}
+            </MotionText>
+            <div className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
+              <MotionText delay={0.3} className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
                 {t('about.desc1')}
-              </li>
-              <li className='flex items-center gap-2'>
+              </MotionText>
+              <MotionText delay={0.4} className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
                 {t('about.desc2')}
-              </li>
-              <li className='flex items-center gap-2'>
+              </MotionText>
+              <MotionText delay={0.5} className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
                 {t('about.desc3')}
-              </li>
-              <li className='flex items-center gap-2'>
+              </MotionText>
+              <MotionText delay={0.6} className='flex items-center gap-2'>
                 <Dot className='w-6 h-6 flex-shrink-0' />
                 {t('about.desc4')}
-              </li>
-            </ol>
+              </MotionText>
+            </div>
           </div>
         </div>
       </div>
