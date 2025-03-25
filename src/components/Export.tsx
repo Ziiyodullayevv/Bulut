@@ -5,7 +5,7 @@ import MotionCard from './MotionCard';
 
 export default function Export() {
   return (
-    <section className='py-10 bg-gray-50 sm:py-20'>
+    <section id='partners' className='py-10 bg-gray-50 sm:py-20'>
       <div className='max-w-[1024px] mx-auto px-6'>
         <MotionText className='text-2xl max-w-2xl sm:text-5xl'>
           {t('export.title')}
