@@ -37,7 +37,7 @@ export default function DriwerComponent() {
       <DrawerContent>
         <DrawerHeader>
           <DrawerTitle className='text-4xl text-center text-black/80'>
-            Menu
+            {t('header.menu')}
           </DrawerTitle>
           <DrawerDescription>
             <nav className='flex flex-col text-lg py-5 gap-5'>
@@ -94,7 +94,7 @@ export default function DriwerComponent() {
             variant='default'
             onClick={() => setOpen(false)}
           >
-            Cancel
+            {t('header.cancel')}
           </Button>
         </DrawerFooter>
       </DrawerContent>
