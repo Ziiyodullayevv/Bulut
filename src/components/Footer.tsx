@@ -10,8 +10,8 @@ export default function Footer() {
         </MotionText>
         <div className='flex flex-col sm:flex-row gap-6 sm:gap-10 justify-between mt-5 sm:mt-10'>
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl mb-2 font-semibold'>
-              {t('contacts.desc1')}:
+            <MotionText className='text-lg sm:text-2xl mb-2'>
+              {t('contacts.desc1')}
             </MotionText>
             <a
               className='text-lg hover:text-[#495aa1]'
@@ -22,8 +22,8 @@ export default function Footer() {
           </div>
 
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl mb-2 font-semibold'>
-              {t('contacts.desc2')}:
+            <MotionText className='text-lg sm:text-2xl mb-2'>
+              {t('contacts.desc2')}
             </MotionText>
             <a
               className='text-lg hover:text-[#495aa1]'
@@ -34,8 +34,8 @@ export default function Footer() {
           </div>
 
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl mb-2 font-semibold'>
-              {t('contacts.desc3')}:
+            <MotionText className='text-lg sm:text-2xl mb-2'>
+              {t('contacts.desc3')}
             </MotionText>
             <a
               className='text-lg hover:text-[#495aa1]'

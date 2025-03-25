@@ -3,7 +3,8 @@
     "a1": "Buyurtma qilish",
     "a2": "Hamkorlarimiz",
     "a3": "Biz haqimizda",
-    "a4": "Bog‘lanish"
+    "a4": "Bog‘lanish",
+    "cancel": "Bekor qilish"
   },
   "lang": {
     "en": "Englizcha",
@@ -57,6 +58,6 @@
     "title": "Bizning kontaktlar:",
     "desc1": "whatsapp",
     "desc2": "telegram",
-    "desc3": "elektron pochta:"
+    "desc3": "elektron pochta"
   }
 }
