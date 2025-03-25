@@ -1,5 +1,6 @@
 import About from './About';
 import Cards from './Cards';
+import Export from './Export';
 // import Export from './Export';
 import Hero from './Hero';
 import Order from './Order';
@@ -11,7 +12,7 @@ export default function Main() {
       <Hero />
       <Order />
       <Cards />
-      {/* <Export /> */}
+      <Export />
       <About />
       <Question />
     </main>

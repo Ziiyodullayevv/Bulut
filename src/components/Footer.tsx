@@ -8,9 +8,9 @@ export default function Footer() {
         <MotionText className='text-2xl sm:text-4xl text-center'>
           {t('contacts.title')}
         </MotionText>
-        <div className='flex flex-col sm:flex-row gap-6 sm:gap-10 justify-between mt-5 sm:mt-10'>
+        <div className='flex flex-col sm:flex-row gap-6 sm:gap-30 justify-center mt-5 sm:mt-10'>
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl mb-2'>
+            <MotionText className='text-lg sm:text-2xl'>
               {t('contacts.desc1')}
             </MotionText>
             <a
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl mb-2'>
+            <MotionText className='text-lg sm:text-2xl'>
               {t('contacts.desc2')}
             </MotionText>
             <a
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl mb-2'>
+            <MotionText className='text-lg sm:text-2xl'>
               {t('contacts.desc3')}
             </MotionText>
             <a
