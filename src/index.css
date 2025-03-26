@@ -129,3 +129,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+section {
+  scroll-margin-top: 80px; /* header balandligi */
+}
