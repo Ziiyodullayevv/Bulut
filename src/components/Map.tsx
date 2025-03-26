@@ -7,7 +7,6 @@ import {
 } from 'react-simple-maps';
 import { Tooltip } from 'react-tooltip';
 
-// 🌍 Ajratilgan davlatlar ro'yxati
 const highlightedCountries = [
   'Kazakhstan',
   'Kyrgyzstan',
@@ -50,12 +49,12 @@ export default function AsiaMap() {
                   onMouseLeave={() => setTooltipContent('')}
                   style={{
                     default: {
-                      fill: isHighlighted ? '#495aa1' : '#DDDCE1',
+                      fill: isHighlighted ? '#6B7CC3' : '#DDDCE1',
                       stroke: '#B6B6C4',
                       outline: 'none',
                     },
                     hover: {
-                      fill: isHighlighted ? '#495aa1' : '#d6e4fc',
+                      fill: isHighlighted ? '#6B7CC3' : '#d6e4fc',
                       stroke: '#3b82f6',
                       outline: 'none',
                     },
