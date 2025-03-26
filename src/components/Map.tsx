@@ -30,8 +30,7 @@ export default function AsiaMap() {
       <ComposableMap
         projection='geoMercator'
         projectionConfig={{
-          center: [90, 40], // Osiyo markaziga moslash
-          scale: 350, // Moslashtirilgan zoom
+          scale: 115, // Moslashtirilgan zoom
         }}
       >
         {/* 🌍 Osiyo xaritasi */}
@@ -49,18 +48,18 @@ export default function AsiaMap() {
                   onMouseLeave={() => setTooltipContent('')}
                   style={{
                     default: {
-                      fill: isHighlighted ? '#6B7CC3' : '#DDDCE1',
-                      stroke: '#B6B6C4',
-                      outline: 'none',
+                      fill: isHighlighted ? '#6173b9' : '#DDDCE1',
+                      stroke: '#686767',
+                      outline: 'red',
                     },
                     hover: {
-                      fill: isHighlighted ? '#6B7CC3' : '#d6e4fc',
+                      fill: isHighlighted ? '#364891' : '#d6e4fc',
                       stroke: '#3b82f6',
                       outline: 'none',
                     },
                     pressed: {
                       fill: '#B6B6C4',
-                      stroke: '#3b82f6',
+                      stroke: '#6173b9',
                       outline: 'none',
                     },
                   }}

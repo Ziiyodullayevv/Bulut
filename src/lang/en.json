@@ -51,8 +51,7 @@
   "questions": {
     "title": "We will calculate the cost of your order and provide consultation on all your questions.",
     "placeholder1": "Name",
-    "placeholder2": "whatsapp/telegram",
-    "placeholder3": "gmail",
+    "placeholder2": "whatsapp/telegram/gmail...",
     "btn": "Send"
   },
   "contacts": {

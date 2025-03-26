@@ -5,7 +5,7 @@ import { t } from 'i18next';
 export default function Header() {
   return (
     <header className='h-20 sticky top-0 bg-white z-50 shadow'>
-      <div className='max-w-[1440px] h-full px-5 mx-auto md:px-5 lg:px-10'>
+      <div className='max-w-[1440px] h-full px-5 mx-auto md:px-5 lg:px-25'>
         <div className='flex h-full justify-between items-center'>
           <img className='w-25' src='/logo.svg' alt='logo' />
 

@@ -51,8 +51,7 @@
   "questions": {
     "title": "Buyurtmangiz narxini hisoblab beramiz va barcha savollaringiz bo‘yicha maslahat beramiz.",
     "placeholder1": "Ism",
-    "placeholder2": "whatsapp/telegram",
-    "placeholder3": "gmail",
+    "placeholder2": "whatsapp/telegram/gmail...",
     "btn": "Yuborish"
   },
   "contacts": {

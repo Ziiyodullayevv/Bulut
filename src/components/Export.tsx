@@ -6,13 +6,13 @@ import MotionCard from './MotionCard';
 export default function Export() {
   return (
     <section id='partners' className='py-10 bg-gray-50 sm:py-20'>
-      <div className='max-w-[1024px] mx-auto px-6'>
+      <div className='max-w-[1440px] mx-auto px-6 lg:px-25'>
         <MotionText className='text-2xl max-w-2xl sm:text-5xl'>
           {t('export.title')}
         </MotionText>
 
-        <MotionCard className='flex border bg-white border-solid border-gray-300 rounded-2xl min-h-[270px] sm:rounded-4xl items-center mt-8 justify-center'>
-          <div className='-mt-[15%] mb-[5%] -mr-[5%] h-full w-full'>
+        <MotionCard className='flex rounded-2xl min-h-[270px] sm:rounded-4xl items-center mt-8 justify-center'>
+          <div className='h-full mt-[5%] -mb-[18%] w-full'>
             <WorldMap />
           </div>
         </MotionCard>

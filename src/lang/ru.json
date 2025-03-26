@@ -51,8 +51,7 @@
   "questions": {
     "title": "Расчитаем стоимость вашего заказа и проконсультируйтем по всем вопросам",
     "placeholder1": "Имя",
-    "placeholder2": "Whatsapp/telegram",
-    "placeholder3": "Gmail",
+    "placeholder2": "whatsapp/telegram/gmail...",
     "btn": "Отправить"
   },
   "contacts": {

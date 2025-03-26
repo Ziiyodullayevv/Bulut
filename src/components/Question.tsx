@@ -18,30 +18,30 @@ export default function Question() {
             <MotionCard className='min-w-[241px]'>
               <Input
                 type='text'
-                className='h-12 px-4 bg-white placeholder:text-lg'
+                className='h-12 px-4 bg-white placeholder:text-base'
                 placeholder={t('questions.placeholder1')}
               />
             </MotionCard>
 
             <MotionCard className='min-w-[241px]'>
               <Input
-                className='h-12 bg-white px-4 placeholder:text-lg'
+                className='h-12 bg-white px-4 placeholder:text-base'
                 type='text'
                 placeholder={t('questions.placeholder2')}
               />
             </MotionCard>
 
-            <MotionCard className='min-w-[241px]'>
+            {/* <MotionCard className='min-w-[241px]'>
               <Input
-                className='h-12 px-4 bg-white placeholder:text-lg'
+                className='h-12 px-4 bg-white placeholder:text-base'
                 type='text'
                 placeholder={t('questions.placeholder3')}
               />
-            </MotionCard>
+            </MotionCard> */}
           </div>
         </div>
         <MotionCard className='flex'>
-          <Button className='h-12 w-full sm:w-[241px] text-lg cursor-pointer mt-5'>
+          <Button className='h-12 w-full sm:w-[241px] text-base cursor-pointer mt-5'>
             {t('questions.btn')}
           </Button>
         </MotionCard>
