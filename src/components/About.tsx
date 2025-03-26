@@ -11,7 +11,7 @@ export default function About() {
           {/* Rasm qismi */}
           <MotionCard
             delay={0.5}
-            className='rounded-2xl overflow-hidden md:col-span-5 flex justify-center'
+            className='rounded-2xl h-[270px] overflow-hidden md:col-span-5 flex justify-center'
           >
             <img
               className='w-full h-auto md:h-full object-cover'

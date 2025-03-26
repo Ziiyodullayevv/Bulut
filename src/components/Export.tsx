@@ -11,8 +11,8 @@ export default function Export() {
           {t('export.title')}
         </MotionText>
 
-        <MotionCard className='flex border bg-white border-solid border-gray-300 rounded-2xl min-h-[250px] sm:rounded-4xl items-center mt-8 justify-center'>
-          <div className='-ml-[7%] -mt-[5%] -mb-[12%] h-full w-full'>
+        <MotionCard className='flex border bg-white border-solid border-gray-300 rounded-2xl min-h-[270px] sm:rounded-4xl items-center mt-8 justify-center'>
+          <div className='-mt-[15%] mb-[5%] -mr-[5%] h-full w-full'>
             <WorldMap />
           </div>
         </MotionCard>
