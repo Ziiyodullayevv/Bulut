@@ -1,5 +1,5 @@
 import { t } from 'i18next';
-import { Dot } from 'lucide-react';
+// import { Dot } from 'lucide-react';
 import MotionText from './MotionText';
 import MotionCard from './MotionCard';
 
@@ -27,19 +27,19 @@ export default function About() {
             </MotionText>
             <div className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
               <MotionText delay={0.3} className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
+                {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc1')}
               </MotionText>
               <MotionText delay={0.4} className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
+                {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc2')}
               </MotionText>
               <MotionText delay={0.5} className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
+                {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc3')}
               </MotionText>
               <MotionText delay={0.6} className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
+                {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc4')}
               </MotionText>
             </div>
