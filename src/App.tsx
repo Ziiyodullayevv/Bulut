@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Loading from './components/Loading';
 import Main from './components/Main';
 import './i18n'; // i18n'ni faqat bir marta import qilish
+import { Toaster } from 'sonner';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,6 +20,7 @@ export default function App() {
     <>
       <Header />
       <Main />
+      <Toaster position='bottom-right' offset={50} />
       <Footer />
     </>
   );

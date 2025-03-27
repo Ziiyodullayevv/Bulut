@@ -59,5 +59,11 @@
     "desc1": "whatsapp",
     "desc2": "telegram",
     "desc3": "gmail"
+  },
+  "toaster": {
+    "title": "Successful",
+    "requared": "Iltimos, barcha maydonlarni to'ldiring!",
+    "success": "Information sent successfully!",
+    "error": "An error occurred, please try again!"
   }
 }

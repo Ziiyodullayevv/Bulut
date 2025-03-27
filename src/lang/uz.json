@@ -59,5 +59,11 @@
     "desc1": "whatsapp",
     "desc2": "telegram",
     "desc3": "elektron pochta"
+  },
+  "toaster": {
+    "title": "Muvaffaqiyatli",
+    "requared": "Iltimos, barcha maydonlarni to'ldiring!",
+    "success": "Ma’lumot muvaffaqiyatli yuborildi!",
+    "error": "Xatolik yuz berdi, qaytadan urinib ko‘ring!"
   }
 }
