@@ -36,7 +36,7 @@ export default function AsiaMap() {
         }}
         // projection='geoMercator'
         projectionConfig={{
-          scale: 180, // Moslashtirilgan zoom
+          scale: 170, // Moslashtirilgan zoom
         }}
       >
         {/* 🌍 Osiyo xaritasi */}

@@ -11,7 +11,7 @@ export default function Export() {
           {t('export.title')}
         </MotionText>
 
-        <MotionCard className='flex overflow-hidden p-2 min-h-[270px] items-center mt-8 justify-center'>
+        <MotionCard className='overflow-hidden  mt-8'>
           <WorldMap />
         </MotionCard>
       </div>
