@@ -28,13 +28,19 @@ export default function AsiaMap() {
   return (
     <>
       <ComposableMap
-        projection='geoMercator'
+        style={{
+          marginLeft: '-5%',
+          marginBottom: '-10%',
+          marginTop: '-3%',
+          width: '100%',
+        }}
+        // projection='geoMercator'
         projectionConfig={{
-          scale: 115, // Moslashtirilgan zoom
+          scale: 180, // Moslashtirilgan zoom
         }}
       >
         {/* 🌍 Osiyo xaritasi */}
-        <Geographies geography='/features.json'>
+        <Geographies geography='/worldMap.json'>
           {({ geographies }) =>
             geographies.map((geo) => {
               const countryName = geo.properties.name;
