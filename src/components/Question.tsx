@@ -48,8 +48,6 @@ export default function Question() {
         throw new Error('Server xatosi!');
       }
 
-      console.log('yes');
-
       toast.success(t('toaster.title'), { description: t('toaster.success') }); // Agar muvaffaqiyatli yuborilsa
       setFormData({ name: '', email: '' });
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -62,7 +60,7 @@ export default function Question() {
     <section className='py-10 sm:py-20 relative bg-[url(/4.jpg)] bg-cover bg-center bg-no-repeat'>
       <span className='absolute left-0 right-0 bottom-0 bg-white/30 backdrop-blur-sm top-0'></span>
       <div className='max-w-[1024px] relative z-10 mx-auto px-6'>
-        <MotionText className='text-xl max-w-3xl mb-12 sm:text-4xl'>
+        <MotionText className='text-xl text-c1 font-bold max-w-3xl mb-12 sm:text-4xl'>
           {t('questions.title')}
         </MotionText>
 
@@ -94,7 +92,7 @@ export default function Question() {
 
         <MotionCard className='flex'>
           <Button
-            className='h-12 w-full sm:w-[241px] text-base cursor-pointer mt-5'
+            className='h-12 w-full active:scale-90 hover:shadow-2xl sm:w-[241px] text-base cursor-pointer mt-5'
             onClick={handleSubmit}
           >
             {t('questions.btn')}

@@ -3,14 +3,14 @@ import MotionText from './MotionText';
 
 export default function Footer() {
   return (
-    <footer id='contact' className='py-10'>
+    <footer id='contact' className='py-10 text-black'>
       <div className='max-w-[1024px] mx-auto px-5 md:px-10'>
-        <MotionText className='text-2xl sm:text-4xl text-center'>
+        <MotionText className='text-2xl font-bold text-c1 sm:text-4xl text-center'>
           {t('contacts.title')}
         </MotionText>
         <div className='flex flex-col sm:flex-row gap-6 sm:gap-30 justify-center mt-5 sm:mt-10'>
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl'>
+            <MotionText className='text-lg text-c1 sm:text-2xl'>
               {t('contacts.desc1')}
             </MotionText>
             <a
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl'>
+            <MotionText className='text-lg text-c1 sm:text-2xl'>
               {t('contacts.desc2')}
             </MotionText>
             <a
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div className='text-center'>
-            <MotionText className='text-lg sm:text-2xl'>
+            <MotionText className='text-lg  text-c1 sm:text-2xl'>
               {t('contacts.desc3')}
             </MotionText>
             <a

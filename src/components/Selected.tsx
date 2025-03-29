@@ -30,7 +30,7 @@ export default function Selected({ width, height }: Props) {
       <SelectTrigger style={{ width, height }}>
         <SelectValue placeholder={t('lang.placeholder')} />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className='text-c1'>
         <SelectItem value='uz'>{t('lang.uz')}</SelectItem>
         <SelectItem value='en'>{t('lang.en')}</SelectItem>
         <SelectItem value='ru'>{t('lang.ru')}</SelectItem>

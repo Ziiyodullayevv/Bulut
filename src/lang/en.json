@@ -62,7 +62,7 @@
   },
   "toaster": {
     "title": "Successful",
-    "requared": "Iltimos, barcha maydonlarni to'ldiring!",
+    "requared": "Please fill in all fields!",
     "success": "Information sent successfully!",
     "error": "An error occurred, please try again!"
   }

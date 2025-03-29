@@ -15,14 +15,14 @@ export default function About() {
           >
             <img
               className='w-full h-auto md:h-full object-cover'
-              src='/4.jpg'
+              src='/1.jpg'
               alt='jpg'
             />
           </MotionCard>
 
           {/* Matn qismi */}
-          <div className='md:col-span-7 flex flex-col justify-center'>
-            <MotionText className='text-2xl sm:text-5xl mb-4'>
+          <div className='md:col-span-7 flex text-black flex-col justify-center'>
+            <MotionText className='text-2xl text-c1 font-bold sm:text-5xl mb-4'>
               {t('about.title')}
             </MotionText>
             <div className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>

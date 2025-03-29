@@ -18,8 +18,8 @@ export default function Loading() {
           transition={{ duration: 1.5, ease: 'easeInOut' }}
           className='flex flex-col items-center gap-2'
         >
-          <img className='w-30' src='/logo.svg' alt='logo' />
-          <h2 className='text-center text-[#3a477a] flex'>
+          <img className='w-30' src='/loader.svg' alt='logo' />
+          <h2 className='text-center text-c1 flex'>
             Loading
             <motion.span
               className='ml-1'

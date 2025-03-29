@@ -12,13 +12,13 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // Har 3 sekundda almashtirish
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className='py-20 relative text-black bg-center bg-no-repeat bg-cover min-h-[clamp(500px,calc(100dvh-80px),750px)] flex overflow-hidden'>
+    <section className='sm:py-20 relative text-primary bg-c2 bg-center bg-no-repeat bg-cover min-h-[clamp(500px,calc(100dvh-80px),950px)] flex flex-col overflow-hidden'>
       {/* Rasmlar animatsiyasi */}
       <AnimatePresence mode='wait'>
         <motion.div
@@ -33,17 +33,17 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Shaffof overlay */}
-      <span className='bg-white/30 absolute left-0 right-0 bottom-0 top-0'></span>
+      <span className='bg-c2/30 absolute left-0 right-0 bottom-0 top-0'></span>
 
       {/* Kontent */}
-      <div className='max-w-[1024px] mx-auto  px-5 flex-1 flex relative z-10'>
+      <div className='max-w-[1024px] mx-auto px-5 flex-1 flex relative z-10'>
         <div className='flex flex-col items-center gap-14 justify-evenly flex-1'>
           <div>
-            <MotionText className='text-3xl sm:text-5xl leading-14 font-semibold sm:leading-22 text-center'>
+            <MotionText className='text-5xl text-c1 sm:text-7xl font-bold leading-14 sm:leading-22 text-center'>
               {t('hero.title')}
             </MotionText>
 
-            <div className='flex flex-col sm:flex-row mt-10 text-center font-semibold text-black/80 justify-center sm:text-xl md:text-2xl gap-5 sm:gap-10'>
+            <div className='flex flex-col sm:flex-row mt-10 text-center font-bold text-black/80 justify-center text-xl md:text-2xl gap-5 sm:gap-10'>
               <MotionText delay={0.4}>{t('hero.subTitle1')}</MotionText>
               <MotionText delay={0.4}>{t('hero.subTitle2')}</MotionText>
             </div>
