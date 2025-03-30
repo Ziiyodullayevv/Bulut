@@ -16,7 +16,7 @@ export default function About() {
             <img
               className='w-full h-auto md:h-full object-cover'
               src='/1.jpg'
-              alt='jpg'
+              alt='Bulut Paper mahsuloti'
             />
           </MotionCard>
 

@@ -16,7 +16,7 @@ export default function Cards() {
             <img
               className='w-full group-hover:scale-110 transition-transform h-full'
               src='/2.jpg'
-              alt='jpg'
+              alt='Bulut Paper mahsuloti'
             />
           </MotionCard>
           <div className='col-span-12 text-black md:col-span-7 flex flex-col'>
@@ -49,7 +49,7 @@ export default function Cards() {
             <img
               className='h-full w-full group-hover:scale-110 transition-transform object-cover'
               src='/4.jpg'
-              alt='jpg'
+              alt='Bulut Paper mahsuloti'
             />
           </MotionCard>
 
