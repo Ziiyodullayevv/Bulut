@@ -5,7 +5,10 @@ export default function Footer() {
   return (
     <footer id='contact' className='py-10 text-black'>
       <div className='max-w-[1024px] mx-auto px-5 md:px-10'>
-        <MotionText className='text-2xl font-bold text-c1 sm:text-4xl text-center'>
+        <MotionText
+          as={'h2'}
+          className='text-2xl font-bold text-c1 sm:text-4xl text-center'
+        >
           {t('contacts.title')}
         </MotionText>
         <div className='flex flex-col sm:flex-row gap-6 sm:gap-30 justify-center mt-5 sm:mt-10'>

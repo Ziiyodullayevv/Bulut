@@ -52,7 +52,10 @@ export default function Order() {
     <section id='order' className='py-10 sm:py-20'>
       <div className='max-w-[1024px] mx-auto px-6'>
         <div className='flex justify-center'>
-          <MotionText className='text-center text-c1 font-bold max-w-lg sm:leading-14 text-2xl sm:text-5xl'>
+          <MotionText
+            as={'h2'}
+            className='text-center text-c1 font-bold max-w-lg sm:leading-14 text-2xl sm:text-5xl'
+          >
             {t('order.title')}
           </MotionText>
         </div>

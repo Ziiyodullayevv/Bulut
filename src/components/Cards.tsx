@@ -14,33 +14,32 @@ export default function Cards() {
             className='h-[270px] group sm:h-[350px] rounded-2xl overflow-hidden col-span-12 md:col-span-5'
           >
             <img
-              className='w-full group-hover:scale-110 transition-transform h-full'
+              className='w-full group-hover:scale-110 transition-transform h-full object-cover'
               src='/2.jpg'
-              alt='Bulut Paper mahsuloti'
+              alt='Bulut Paper maxsus dizayndagi qog‘oz mahsuloti'
             />
           </MotionCard>
           <div className='col-span-12 text-black md:col-span-7 flex flex-col'>
-            <MotionText className='text-2xl text-c1 font-bold sm:text-5xl mb-4'>
+            <MotionText
+              as='h2'
+              className='text-2xl text-c1 font-bold sm:text-5xl mb-4'
+            >
               {t('cards.card1.title')}
             </MotionText>
-            <div className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card1.desc1')}
-              </MotionText>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card1.desc2')}
-              </MotionText>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card1.desc3')}
-              </MotionText>
-            </div>
+            <ul className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
+              {[1, 2, 3].map((num) => (
+                <li key={num} className='flex items-center gap-2'>
+                  <MotionCard delay={0.5}>
+                    <Dot className='w-6 h-6 flex-shrink-0' />
+                  </MotionCard>
+                  <MotionText as='p'>{t(`cards.card1.desc${num}`)}</MotionText>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        {/* Ikkinchi bo‘MotionTextm */}
+        {/* Ikkinchi bo‘lim */}
         <div className='grid grid-cols-12 mt-10 sm:mt-20 gap-4 sm:gap-8 items-center'>
           <MotionCard
             delay={0.5}
@@ -49,36 +48,27 @@ export default function Cards() {
             <img
               className='h-full w-full group-hover:scale-110 transition-transform object-cover'
               src='/4.jpg'
-              alt='Bulut Paper mahsuloti'
+              alt='Bulut Paper ekologik toza qog‘oz mahsuloti'
             />
           </MotionCard>
 
           <div className='col-span-12 text-black md:col-span-7 flex flex-col'>
-            <MotionText className='text-2xl text-c1 font-bold sm:text-5xl mb-4'>
+            <MotionText
+              as='h2'
+              className='text-2xl text-c1 font-bold sm:text-5xl mb-4'
+            >
               {t('cards.card2.title')}
             </MotionText>
-            <ol className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card2.desc1')}
-              </MotionText>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card2.desc2')}
-              </MotionText>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card2.desc3')}
-              </MotionText>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card2.desc4')}
-              </MotionText>
-              <MotionText className='flex items-center gap-2'>
-                <Dot className='w-6 h-6 flex-shrink-0' />
-                {t('cards.card2.desc5')}
-              </MotionText>
-            </ol>
+            <ul className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
+              {[1, 2, 3, 4, 5].map((num) => (
+                <li key={num} className='flex items-center gap-2'>
+                  <MotionCard delay={0.5}>
+                    <Dot className='w-6 h-6 flex-shrink-0' />
+                  </MotionCard>
+                  <MotionText as='p'>{t(`cards.card2.desc${num}`)}</MotionText>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

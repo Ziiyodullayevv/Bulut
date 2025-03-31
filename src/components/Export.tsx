@@ -7,7 +7,10 @@ export default function Export() {
   return (
     <section id='partners' className='py-10 bg-gray-50 sm:py-20'>
       <div className='max-w-[1440px] mx-auto px-6 lg:px-25'>
-        <MotionText className='text-2xl font-bold text-c1 max-w-2xl sm:text-5xl'>
+        <MotionText
+          as={'h2'}
+          className='text-2xl font-bold text-c1 max-w-2xl sm:text-5xl'
+        >
           {t('export.title')}
         </MotionText>
 

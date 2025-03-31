@@ -60,7 +60,10 @@ export default function Question() {
     <section className='py-10 sm:py-20 relative bg-[url(/4.jpg)] bg-cover bg-center bg-no-repeat'>
       <span className='absolute left-0 right-0 bottom-0 bg-white/30 backdrop-blur-sm top-0'></span>
       <div className='max-w-[1024px] relative z-10 mx-auto px-6'>
-        <MotionText className='text-xl text-c1 font-bold max-w-3xl mb-12 sm:text-4xl'>
+        <MotionText
+          as={'h2'}
+          className='text-xl text-c1 font-bold max-w-3xl mb-12 sm:text-4xl'
+        >
           {t('questions.title')}
         </MotionText>
 

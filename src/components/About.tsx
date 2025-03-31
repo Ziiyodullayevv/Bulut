@@ -22,23 +22,42 @@ export default function About() {
 
           {/* Matn qismi */}
           <div className='md:col-span-7 flex text-black flex-col justify-center'>
-            <MotionText className='text-2xl text-c1 font-bold sm:text-5xl mb-4'>
+            <MotionText
+              as='h2'
+              className='text-2xl text-c1 font-bold sm:text-5xl mb-4'
+            >
               {t('about.title')}
             </MotionText>
             <div className='flex flex-col text-lg sm:text-xl gap-4 sm:gap-6 mt-3 sm:mt-5'>
-              <MotionText delay={0.3} className='flex items-center gap-2'>
+              <MotionText
+                as='p'
+                delay={0.3}
+                className='flex items-center gap-2'
+              >
                 {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc1')}
               </MotionText>
-              <MotionText delay={0.4} className='flex items-center gap-2'>
+              <MotionText
+                as='p'
+                delay={0.4}
+                className='flex items-center gap-2'
+              >
                 {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc2')}
               </MotionText>
-              <MotionText delay={0.5} className='flex items-center gap-2'>
+              <MotionText
+                as='p'
+                delay={0.5}
+                className='flex items-center gap-2'
+              >
                 {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc3')}
               </MotionText>
-              <MotionText delay={0.6} className='flex items-center gap-2'>
+              <MotionText
+                as='p'
+                delay={0.6}
+                className='flex items-center gap-2'
+              >
                 {/* <Dot className='w-6 h-6 flex-shrink-0' /> */}
                 {t('about.desc4')}
               </MotionText>
