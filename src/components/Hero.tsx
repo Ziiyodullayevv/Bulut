@@ -23,7 +23,7 @@ export default function Hero() {
       <>
         <MotionText
           as={'h1'}
-          className='text-5xl text-c1 font-popins stoke-text sm:text-6xl font-bold leading-14 sm:leading-22 text-center'
+          className='text-4xl text-c1 font-popins stoke-text sm:text-6xl font-bold leading-14 sm:leading-22 text-center'
         >
           {t('hero.title')}
         </MotionText>
