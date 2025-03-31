@@ -20,7 +20,7 @@ export default function Question() {
   };
 
   const handleSubmit = async () => {
-    const url = 'https://aberno-backend.ru/api-docs/#/Leads/post_leads_';
+    const url = 'https://aberno-backend.ru/api/v1/leads/';
 
     if (!formData.name || !formData.email) {
       toast.error(t('toaster.requared'));

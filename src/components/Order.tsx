@@ -14,7 +14,7 @@ export default function Order() {
   };
 
   const handleSubmit = async () => {
-    const url = 'https://aberno-backend.ru/api-docs/#/Leads/post_leads_';
+    const url = 'https://aberno-backend.ru/api/v1/leads/';
 
     if (!formData) {
       toast.error(t('toaster.requared'));
