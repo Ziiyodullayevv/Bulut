@@ -137,3 +137,7 @@ html {
 section {
   scroll-margin-top: 80px; /* header balandligi */
 }
+
+.stoke-text {
+  text-shadow: 0 4px 10px rgba(4, 40, 119, 0.274);
+}

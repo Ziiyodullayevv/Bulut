@@ -39,7 +39,7 @@ export default function Hero() {
       <div className='max-w-[1024px] mx-auto px-5 flex-1 flex relative z-10'>
         <div className='flex flex-col items-center gap-14 justify-evenly flex-1'>
           <div>
-            <MotionText className='text-5xl text-c1 sm:text-7xl font-bold leading-14 sm:leading-22 text-center'>
+            <MotionText className='text-5xl text-c1 stoke-text sm:text-7xl font-bold leading-14 sm:leading-22 text-center'>
               {t('hero.title')}
             </MotionText>
 
