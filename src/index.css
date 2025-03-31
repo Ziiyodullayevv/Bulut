@@ -141,6 +141,6 @@ section {
 }
 
 .stoke-text {
-  -webkit-text-stroke: 2px #1f284e; /* MacOS, iOS uchun */
+  -webkit-text-stroke: 1px #1f284e; /* MacOS, iOS uchun */
   color: var(--v1); /* Ichki matn rangsiz bo‘lishi uchun */
 }
