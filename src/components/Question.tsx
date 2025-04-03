@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from './ui/button';
 import { t } from 'i18next';
@@ -12,12 +12,12 @@ export default function Question() {
     email: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData((prev) => ({
+      ...prev,
       [e.target.name]: e.target.value,
-    });
-  };
+    }));
+  }, []);
 
   const handleSubmit = async () => {
     const url = 'https://aberno-backend.ru/api/v1/leads/';
@@ -48,7 +48,7 @@ export default function Question() {
         throw new Error('Server xatosi!');
       }
 
-      toast.success(t('toaster.title'), { description: t('toaster.success') }); // Agar muvaffaqiyatli yuborilsa
+      toast.success(t('toaster.title'), { description: t('toaster.success') });
       setFormData({ name: '', email: '' });
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
@@ -56,17 +56,22 @@ export default function Question() {
     }
   };
 
+  // **MotionText ni useMemo bilan optimallashtiramiz**
+  const memoizedTitle = useMemo(() => {
+    return (
+      <MotionText
+        as='h2'
+        className='text-xl text-white font-bold max-w-3xl mb-12 sm:text-4xl'
+      >
+        {t('questions.title')}
+      </MotionText>
+    );
+  }, []);
+
   return (
     <section className='py-10 sm:py-20 bg-[url(/question-bg.svg)] bg-right-bottom relative bg-c1 bg-no-repeat'>
-      {/* <span className='absolute left-0 right-0 bottom-0 backdrop-blur-sm top-0'></span> */}
       <div className='max-w-[1024px] relative z-10 mx-auto px-6'>
-        <MotionText
-          as={'h2'}
-          className='text-xl text-white font-bold max-w-3xl mb-12 sm:text-4xl'
-        >
-          {t('questions.title')}
-        </MotionText>
-
+        {memoizedTitle}
         <div className='mx-auto w-full'>
           <div className='flex flex-col sm:flex-row mt-6 gap-4'>
             <MotionCard className='min-w-[241px]'>
@@ -82,7 +87,7 @@ export default function Question() {
 
             <MotionCard className='min-w-[241px]'>
               <Input
-                type='text'
+                type='email'
                 name='email'
                 value={formData.email}
                 onChange={handleChange}
@@ -92,7 +97,6 @@ export default function Question() {
             </MotionCard>
           </div>
         </div>
-
         <MotionCard className='flex'>
           <Button
             className='h-12 w-full active:scale-90 hover:shadow-2xl sm:w-[241px] text-base cursor-pointer mt-5'
