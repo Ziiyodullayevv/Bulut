@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { t } from 'i18next';
@@ -9,7 +9,7 @@ import { toast } from 'sonner';
 export default function Order() {
   const [formData, setFormData] = useState('');
 
-  const handleChange = (e: { target: { value: SetStateAction<string> } }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData(e.target.value);
   };
 
@@ -48,17 +48,23 @@ export default function Order() {
     }
   };
 
+  // ✅ `OrderTitle` ni `useMemo` bilan optimallashtiramiz
+  const OrderTitle = useMemo(
+    () => (
+      <MotionText
+        as={'h2'}
+        className='text-center text-c1 font-bold max-w-lg sm:leading-14 text-2xl sm:text-5xl'
+      >
+        {t('order.title')}
+      </MotionText>
+    ),
+    []
+  );
+
   return (
     <section id='order' className='py-10 sm:py-20'>
       <div className='max-w-[1024px] mx-auto px-6'>
-        <div className='flex justify-center'>
-          <MotionText
-            as={'h2'}
-            className='text-center text-c1 font-bold max-w-lg sm:leading-14 text-2xl sm:text-5xl'
-          >
-            {t('order.title')}
-          </MotionText>
-        </div>
+        <div className='flex justify-center'>{OrderTitle}</div>
 
         <div className='flex flex-col mt-8 gap-8 items-center'>
           <MotionCard className='w-full flex justify-center'>
