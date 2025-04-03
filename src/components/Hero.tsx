@@ -23,14 +23,18 @@ export default function Hero() {
       <>
         <MotionText
           as={'h1'}
-          className='text-4xl text-c1 font-popins stoke-text sm:text-6xl font-bold leading-14 sm:leading-22 text-center'
+          className='text-4xl shadow-c1 text-shadow sm:text-6xl font-bold leading-14 sm:leading-22 text-center'
         >
           {t('hero.title')}
         </MotionText>
 
-        <div className='flex flex-col sm:flex-row mt-10 text-center font-bold text-black/80 justify-center text-xl md:text-2xl gap-5 sm:gap-10'>
-          <MotionText delay={0.4}>{t('hero.subTitle1')}</MotionText>
-          <MotionText delay={0.4}>{t('hero.subTitle2')}</MotionText>
+        <div className='flex flex-col sm:flex-row mt-10 text-center font-bold justify-center text-2xl md:text-3xl gap-5 sm:gap-10'>
+          <MotionText className='sm:max-w-[300px]' delay={0.4}>
+            {t('hero.subTitle1')}
+          </MotionText>
+          <MotionText className='sm:max-w-[300px]' delay={0.4}>
+            {t('hero.subTitle2')}
+          </MotionText>
         </div>
       </>
     ),
@@ -38,7 +42,7 @@ export default function Hero() {
   );
 
   return (
-    <section className='sm:py-20 relative bg-c2 min-h-[clamp(500px,calc(100dvh-80px),950px)] flex flex-col overflow-hidden'>
+    <section className='sm:py-10 relative bg-c1 min-h-[clamp(500px,calc(100dvh-80px),950px)] flex flex-col overflow-hidden'>
       {/* Rasmlar animatsiyasi */}
       <div className='absolute inset-0 flex items-center justify-center overflow-hidden'>
         {images.map((img, index) => (
@@ -57,12 +61,13 @@ export default function Hero() {
       </div>
 
       {/* Shaffof overlay */}
-      <span className='bg-c2/40 absolute inset-0 z-10'></span>
+      <span className='bg-c1/60 absolute inset-0 z-10'></span>
 
       {/* Kontent */}
       <div className='max-w-[1024px] mx-auto px-5 flex-1 flex relative z-10'>
         <div className='flex flex-col items-center gap-14 justify-evenly flex-1'>
-          <div>{memoizedText}</div> {/* Faqat bir marta yaratilgan matn */}
+          <div className='text-white'>{memoizedText}</div>{' '}
+          {/* Faqat bir marta yaratilgan matn */}
           <div className='flex justify-center'>
             <ScrollIndicator />
           </div>

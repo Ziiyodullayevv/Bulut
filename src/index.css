@@ -136,7 +136,6 @@ section {
   scroll-margin-top: 80px; /* header balandligi */
 }
 
-.stoke-text {
-  -webkit-text-stroke: 1px #1f284e; /* MacOS, iOS uchun */
-  color: var(--v1); /* Ichki matn rangsiz bo‘lishi uchun */
+.text-shadow {
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
 }

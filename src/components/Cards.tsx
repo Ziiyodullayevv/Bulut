@@ -6,7 +6,7 @@ import MotionCard from './MotionCard';
 export default function Cards() {
   return (
     <section id='cards' className='py-10 sm:py-20'>
-      <div className='max-w-[800px] mx-auto px-4 sm:px-6'>
+      <div className='max-w-[800px] mx-auto px-6'>
         {/* Birinchi bo‘lim */}
         <div className='grid grid-cols-12 gap-4 sm:gap-8 items-center'>
           <MotionCard

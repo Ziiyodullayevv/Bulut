@@ -57,12 +57,12 @@ export default function Question() {
   };
 
   return (
-    <section className='py-10 sm:py-20 relative bg-[url(/4.jpg)] bg-cover bg-center bg-no-repeat'>
-      <span className='absolute left-0 right-0 bottom-0 bg-white/30 backdrop-blur-sm top-0'></span>
+    <section className='py-10 sm:py-20 bg-[url(/question-bg.svg)] bg-right-bottom relative bg-c1 bg-no-repeat'>
+      {/* <span className='absolute left-0 right-0 bottom-0 backdrop-blur-sm top-0'></span> */}
       <div className='max-w-[1024px] relative z-10 mx-auto px-6'>
         <MotionText
           as={'h2'}
-          className='text-xl text-c1 font-bold max-w-3xl mb-12 sm:text-4xl'
+          className='text-xl text-white font-bold max-w-3xl mb-12 sm:text-4xl'
         >
           {t('questions.title')}
         </MotionText>
@@ -75,7 +75,7 @@ export default function Question() {
                 name='name'
                 value={formData.name}
                 onChange={handleChange}
-                className='h-12 px-4 bg-white placeholder:text-base'
+                className='h-12 text-white px-4 bg-transparent placeholder:text-white'
                 placeholder={t('questions.placeholder1')}
               />
             </MotionCard>
@@ -86,7 +86,7 @@ export default function Question() {
                 name='email'
                 value={formData.email}
                 onChange={handleChange}
-                className='h-12 bg-white px-4 placeholder:text-base'
+                className='h-12 bg-transparent text-white px-4 placeholder:text-white'
                 placeholder={t('questions.placeholder2')}
               />
             </MotionCard>
