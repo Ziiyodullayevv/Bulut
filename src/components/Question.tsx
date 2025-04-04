@@ -61,7 +61,7 @@ export default function Question() {
     return (
       <MotionText
         as='h2'
-        className='text-xl text-white font-bold max-w-3xl mb-12 sm:text-4xl'
+        className='text-xl font-popins text-white font-bold max-w-3xl mb-12 sm:text-4xl'
       >
         {t('questions.title')}
       </MotionText>
@@ -80,7 +80,7 @@ export default function Question() {
                 name='name'
                 value={formData.name}
                 onChange={handleChange}
-                className='h-12 text-white px-4 bg-transparent placeholder:text-white'
+                className='h-12 bg-white sm:bg-transparent sm:text-white px-4 placeholder:text-gray-500 sm:placeholder:text-white'
                 placeholder={t('questions.placeholder1')}
               />
             </MotionCard>
@@ -91,7 +91,7 @@ export default function Question() {
                 name='email'
                 value={formData.email}
                 onChange={handleChange}
-                className='h-12 bg-transparent text-white px-4 placeholder:text-white'
+                className='h-12 bg-white sm:bg-transparent sm:text-white px-4 placeholder:text-gray-500 sm:placeholder:text-white'
                 placeholder={t('questions.placeholder2')}
               />
             </MotionCard>
@@ -99,7 +99,7 @@ export default function Question() {
         </div>
         <MotionCard className='flex'>
           <Button
-            className='h-12 w-full active:scale-90 hover:shadow-2xl sm:w-[241px] text-base cursor-pointer mt-5'
+            className='h-12 w-full active:scale-90 box-shadow sm:w-[241px] text-base cursor-pointer mt-5'
             onClick={handleSubmit}
           >
             {t('questions.btn')}

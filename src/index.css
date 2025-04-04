@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import 'tailwindcss';
 @import 'tw-animate-css';
@@ -7,7 +7,7 @@
 
 :root {
   --v1: oklch(0.42 0.12 270);
-  --v2: #8ac1ea;
+  --v2: #369fee;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -15,7 +15,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #8ac1ea;
+  --primary: #369fee;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -79,7 +79,7 @@
 @theme inline {
   --color-c1: var(--v1);
   --color-c2: var(--v2);
-  --font-popins: 'Poppins', sans-serif;
+  --font-popins: 'Montserrat Alternates', sans-serif;
   --font-inter: 'Inter', sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -138,4 +138,8 @@ section {
 
 .text-shadow {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
+}
+
+.box-shadow {
+  box-shadow: -4px 6px 15.6px -4px #369feecf;
 }

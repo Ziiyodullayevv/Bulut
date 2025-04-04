@@ -7,7 +7,7 @@ export default function Footer() {
       <div className='max-w-[1024px] mx-auto px-5 md:px-10'>
         <MotionText
           as={'h2'}
-          className='text-2xl font-bold text-c1 sm:text-4xl text-center'
+          className='text-2xl font-popins font-bold text-c1 sm:text-4xl text-center'
         >
           {t('contacts.title')}
         </MotionText>

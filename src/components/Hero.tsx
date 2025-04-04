@@ -29,10 +29,10 @@ export default function Hero() {
         </MotionText>
 
         <div className='flex flex-col sm:flex-row mt-10 text-center font-bold justify-center text-2xl md:text-3xl gap-5 sm:gap-10'>
-          <MotionText className='sm:max-w-[300px]' delay={0.4}>
+          <MotionText className='sm:max-w-[320px]' delay={0.4}>
             {t('hero.subTitle1')}
           </MotionText>
-          <MotionText className='sm:max-w-[300px]' delay={0.4}>
+          <MotionText className='sm:max-w-[320px]' delay={0.4}>
             {t('hero.subTitle2')}
           </MotionText>
         </div>
@@ -42,7 +42,7 @@ export default function Hero() {
   );
 
   return (
-    <section className='sm:py-10 relative bg-c1 min-h-[clamp(500px,calc(100dvh-80px),950px)] flex flex-col overflow-hidden'>
+    <section className='sm:py-10 font-popins relative bg-c1 min-h-[clamp(500px,calc(100dvh-80px),900px)] sm:min-h-[clamp(500px,calc(100dvh-80px),600px)] flex flex-col overflow-hidden'>
       {/* Rasmlar animatsiyasi */}
       <div className='absolute inset-0 flex items-center justify-center overflow-hidden'>
         {images.map((img, index) => (

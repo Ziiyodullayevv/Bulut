@@ -24,7 +24,7 @@ export default function About() {
           <div className='md:col-span-7 flex text-black flex-col justify-center'>
             <MotionText
               as='h2'
-              className='text-2xl text-c1 font-bold sm:text-5xl mb-4'
+              className='text-2xl font-popins text-c1 font-bold sm:text-5xl mb-4'
             >
               {t('about.title')}
             </MotionText>

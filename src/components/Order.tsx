@@ -53,7 +53,7 @@ export default function Order() {
     () => (
       <MotionText
         as={'h2'}
-        className='text-center text-c1 font-bold max-w-lg sm:leading-14 text-2xl sm:text-5xl'
+        className='text-center font-popins text-c1 font-bold max-w-lg sm:leading-14 text-2xl sm:text-5xl'
       >
         {t('order.title')}
       </MotionText>
@@ -79,7 +79,7 @@ export default function Order() {
 
           <MotionCard className='w-full flex justify-center'>
             <Button
-              className='h-12 active:scale-90 hover:shadow-2xl w-55 text-base cursor-pointer'
+              className='h-12 box-shadow active:scale-90 w-55 text-base cursor-pointer'
               onClick={handleSubmit}
             >
               {t('order.btn')}
