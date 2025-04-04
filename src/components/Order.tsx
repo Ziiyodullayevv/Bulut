@@ -53,7 +53,7 @@ export default function Order() {
     () => (
       <MotionText
         as={'h2'}
-        className='text-center font-popins text-c1 font-bold max-w-lg sm:leading-14 text-2xl sm:text-5xl'
+        className='text-center font-popins text-c1 font-bold max-w-2xl sm:leading-14 text-2xl sm:text-5xl'
       >
         {t('order.title')}
       </MotionText>

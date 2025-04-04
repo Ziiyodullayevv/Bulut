@@ -22,7 +22,7 @@ export default function Cards() {
           <div className='col-span-12 text-black md:col-span-7 flex flex-col'>
             <MotionText
               as='h2'
-              className='text-2xl font-popins text-c1 font-bold sm:text-5xl mb-4'
+              className='text-2xl font-popins text-c1 font-bold sm:text-4xl mb-4'
             >
               {t('cards.card1.title')}
             </MotionText>
@@ -55,7 +55,7 @@ export default function Cards() {
           <div className='col-span-12 text-black md:col-span-7 flex flex-col'>
             <MotionText
               as='h2'
-              className='text-2xl font-popins text-c1 font-bold sm:text-5xl mb-4'
+              className='text-2xl font-popins text-c1 font-bold sm:text-4xl mb-4'
             >
               {t('cards.card2.title')}
             </MotionText>
