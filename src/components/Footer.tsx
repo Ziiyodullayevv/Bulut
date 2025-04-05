@@ -11,7 +11,7 @@ export default function Footer() {
         >
           {t('contacts.title')}
         </MotionText>
-        <div className='flex flex-col sm:flex-row gap-6 sm:gap-30 justify-center mt-5 sm:mt-10'>
+        <div className='flex flex-col sm:flex-row gap-6 sm:gap-30 justify-center mt-3'>
           <div className='text-center'>
             <MotionText className='text-lg text-c1 sm:text-2xl'>
               {t('contacts.desc1')}
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
 
           <div className='text-center'>
-            <MotionText className='text-lg  text-c1 sm:text-2xl'>
+            <MotionText className='text-lg text-c1 sm:text-2xl'>
               {t('contacts.desc3')}
             </MotionText>
             <a

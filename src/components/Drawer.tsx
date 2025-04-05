@@ -36,11 +36,11 @@ export default function DriwerComponent() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle className='text-4xl text-center text-black/80'>
+          <DrawerTitle className='text-4xl font-popins text-center text-black/80'>
             {t('header.menu')}
           </DrawerTitle>
           <DrawerDescription>
-            <nav className='flex flex-col text-lg py-5 gap-5'>
+            <nav className='flex flex-col font-popins text-lg py-5 gap-5'>
               <a
                 className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
                 href='#order'
@@ -90,7 +90,7 @@ export default function DriwerComponent() {
         <DrawerFooter>
           <Selected width='100%' height='48px' />
           <Button
-            className='w-full mt-4 h-12'
+            className='w-full font-popins mt-4 h-12'
             variant='default'
             onClick={() => setOpen(false)}
           >

@@ -27,10 +27,10 @@ export default function Selected({ width, height }: Props) {
 
   return (
     <Select value={language} onValueChange={handleChange}>
-      <SelectTrigger style={{ width, height }}>
+      <SelectTrigger className='font-popins' style={{ width, height }}>
         <SelectValue placeholder={t('lang.placeholder')} />
       </SelectTrigger>
-      <SelectContent className='text-c1'>
+      <SelectContent className='text-c1 font-popins'>
         <SelectItem value='uz'>{t('lang.uz')}</SelectItem>
         <SelectItem value='en'>{t('lang.en')}</SelectItem>
         <SelectItem value='ru'>{t('lang.ru')}</SelectItem>
