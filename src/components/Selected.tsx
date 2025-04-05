@@ -31,9 +31,9 @@ export default function Selected({ width, height }: Props) {
         <SelectValue placeholder={t('lang.placeholder')} />
       </SelectTrigger>
       <SelectContent className='text-c1 font-popins'>
-        <SelectItem value='uz'>{t('lang.uz')}</SelectItem>
-        <SelectItem value='en'>{t('lang.en')}</SelectItem>
-        <SelectItem value='ru'>{t('lang.ru')}</SelectItem>
+        <SelectItem value='uz'>O'zbekcha</SelectItem>
+        <SelectItem value='en'>English</SelectItem>
+        <SelectItem value='ru'>Русский</SelectItem>
       </SelectContent>
     </Select>
   );
