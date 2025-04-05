@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Loading from './components/Loading';
 import Main from './components/Main';
-import './i18n'; // i18n'ni faqat bir marta import qilish
+import './i18n';
 import { Toaster } from 'sonner';
 
 export default function App() {
@@ -13,6 +13,37 @@ export default function App() {
     const timer = setTimeout(() => setIsLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
+
+  // Scroll logikasi
+  useEffect(() => {
+    if (!isLoading) {
+      const path = window.location.pathname;
+
+      const scrollToId = (id: string) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      switch (path) {
+        case '/order':
+          scrollToId('order');
+          break;
+        case '/partners':
+          scrollToId('partners');
+          break;
+        case '/about':
+          scrollToId('about');
+          break;
+        case '/contact':
+          scrollToId('contact');
+          break;
+        default:
+          break;
+      }
+    }
+  }, [isLoading]);
 
   return isLoading ? (
     <Loading />

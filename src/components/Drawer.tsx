@@ -18,15 +18,16 @@ import { useState } from 'react';
 export default function DriwerComponent() {
   const [open, setOpen] = useState(false);
 
-  // Sahifadagi tegishli qismga borib, drawer'ni yopish funksiyasi
-  const handleNavigation = (id: string) => {
+  // Sahifa reloadsiz URL + scroll qilish funksiyasi
+  const handleNavigation = (path: string, id: string) => {
     setOpen(false); // Drawer'ni yopamiz
     setTimeout(() => {
+      window.history.pushState(null, '', path); // URL'ni o'zgartiramiz
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth' }); // Scroll
       }
-    }, 500); // Drawer yopilishini kutib, keyin harakatlanamiz
+    }, 500);
   };
 
   return (
@@ -43,10 +44,10 @@ export default function DriwerComponent() {
             <nav className='flex flex-col font-popins text-lg py-5 gap-5'>
               <a
                 className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                href='#order'
+                href='/order'
                 onClick={(e) => {
                   e.preventDefault();
-                  handleNavigation('order');
+                  handleNavigation('/order', 'order');
                 }}
               >
                 {t('header.a1')}
@@ -54,10 +55,10 @@ export default function DriwerComponent() {
 
               <a
                 className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                href='#partners'
+                href='/partners'
                 onClick={(e) => {
                   e.preventDefault();
-                  handleNavigation('partners');
+                  handleNavigation('/partners', 'partners');
                 }}
               >
                 {t('header.a2')}
@@ -65,10 +66,10 @@ export default function DriwerComponent() {
 
               <a
                 className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                href='#about'
+                href='/about'
                 onClick={(e) => {
                   e.preventDefault();
-                  handleNavigation('about');
+                  handleNavigation('/about', 'about');
                 }}
               >
                 {t('header.a3')}
@@ -76,10 +77,10 @@ export default function DriwerComponent() {
 
               <a
                 className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
-                href='#contact'
+                href='/contact'
                 onClick={(e) => {
                   e.preventDefault();
-                  handleNavigation('contact');
+                  handleNavigation('/contact', 'contact');
                 }}
               >
                 {t('header.a4')}
