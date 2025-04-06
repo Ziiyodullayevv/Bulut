@@ -69,7 +69,7 @@ export default function Question() {
   }, []);
 
   return (
-    <section className='py-10 sm:py-20 bg-[url(/question-bg.svg)] bg-right-bottom relative bg-c1 bg-no-repeat'>
+    <section className='py-10 sm:py-20 sm:bg-[url(/question-bg.svg)] bg-right-bottom relative bg-c1 bg-no-repeat'>
       <div className='max-w-[1024px] relative z-10 mx-auto px-6'>
         {memoizedTitle}
         <div className='mx-auto w-full'>
