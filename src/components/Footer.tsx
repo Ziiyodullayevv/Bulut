@@ -30,7 +30,7 @@ export default function Footer() {
             </MotionText>
             <a
               className='text-lg hover:text-[#495aa1]'
-              href='tel:+998953247070'
+              href='http://t.me/@Bulut_Officiall'
             >
               +998953247070
             </a>
