@@ -18,7 +18,9 @@ export default function Footer() {
             </MotionText>
             <a
               className='text-lg hover:text-[#495aa1]'
-              href='tel:+998953247070'
+              href='https://wa.me/998953247070'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               +998953247070
             </a>
@@ -29,8 +31,10 @@ export default function Footer() {
               {t('contacts.desc2')}
             </MotionText>
             <a
+              target='_blank'
+              rel='noopener noreferrer'
               className='text-lg hover:text-[#495aa1]'
-              href='http://t.me/@Bulut_Officiall'
+              href='http://t.me/Bulut_Officiall'
             >
               +998953247070
             </a>
