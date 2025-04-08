@@ -15,7 +15,7 @@
   "hero": {
     "title": "Sanitariya-gigiyena qog'oz asosi, to'g'ridan-to'g'ri ishlab chiqaruvchidan.",
     "subTitle1": " 100% Sellyulozadan tayyorlanadi",
-    "subTitle2": "Zichligi 15 g/m² – 24 g/m²"
+    "subTitle2": "Zichligi 15g/m² – 24g/m²"
   },
   "order": {
     "title": "Buyurtmangizning narxini hisoblash.",
@@ -32,10 +32,10 @@
     "card2": {
       "title": "Xususiyatlari",
       "desc1": "Har bir 1 m² da 15-24 g qog‘oz",
-      "desc2": "GOST 3398:2019 bo‘yicha ishlab chiqarish",
-      "desc3": "Yevropa kimyoviy moddalar",
+      "desc2": "O'zDSt 3398:2019 bo‘yicha ishlab chiqarish",
+      "desc3": "Yevropa kimyoviy moddalari",
       "desc4": "1-2-3 qatlamli",
-      "desc5": "Diametri 1200 mm; kengligi 2000 mm gacha"
+      "desc5": "Diametri 1200 mm; Eniga 2000 mm gacha"
     }
   },
   "export": {
@@ -45,8 +45,8 @@
     "title": "Korxona haqida",
     "desc1": "Biz 2018-yildan beri sanitariya-gigiyena qog‘ozi asosini ishlab chiqarish bilan shug‘ullanamiz.",
     "desc2": "Qisqa muddat ichida mahalliy bozorda yetakchilardan biriga aylanishga erishib, qog‘oz ishlab chiqaruvchi eng yaxshi 3 kompaniya qatoriga kirdik.",
-    "desc3": "Yosh va faol jamoamiz barcha mijozlarimizni mamnun qilishga intiladi.",
-    "desc4": "Jamoamiz  ish jarayonlari va mahsulotlarimiz sifatini stabil ravishda yaxshilashga intiladi."
+    "desc3": "Yosh va faol jamoamiz bilan barcha mijozlarimizni mamnun qilishga intilamiz.",
+    "desc4": " Jamoamiz ish jarayonlari va mahsulotlarimiz sifatini doimiy ravishda yaxshilashga intilamiz."
   },
   "questions": {
     "title": "Buyurtmangiz narxini hisoblab beramiz va barcha savollaringiz bo‘yicha maslahat beramiz.",

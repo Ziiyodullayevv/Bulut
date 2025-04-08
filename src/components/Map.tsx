@@ -7,23 +7,26 @@ import {
 } from 'react-simple-maps';
 import { Tooltip } from 'react-tooltip';
 
-const highlightedCountries = [
-  'Kazakhstan',
-  'Kyrgyzstan',
-  'Tajikistan',
-  'Turkmenistan',
-];
+// 🗺️ Har bir davlat uchun alohida rang
+const countryColors: Record<string, string> = {
+  Kazakhstan: '#6173b9',
+  Kyrgyzstan: '#6173b9',
+  Tajikistan: '#6173b9',
+  Turkmenistan: '#6173b9',
+  Uzbekistan: '#369fee', // 🇺🇿 alohida ko‘k rang
+};
 
-// 📍 Markerlar uchun koordinatalar
+// 📍 Markerlar
 const markers: { name: string; coordinates: [number, number] }[] = [
-  { name: 'Kazakhstan', coordinates: [66.9237, 48.0196] }, // 🇰🇿
-  { name: 'Kyrgyzstan', coordinates: [74.7661, 41.2044] }, // 🇰🇬
-  { name: 'Tajikistan', coordinates: [71.2761, 38.861] }, // 🇹🇯
-  { name: 'Turkmenistan', coordinates: [59.5563, 39.1212] }, // 🇹🇲
+  { name: 'Kazakhstan', coordinates: [66.9237, 48.0196] },
+  { name: 'Kyrgyzstan', coordinates: [74.7661, 41.2044] },
+  { name: 'Tajikistan', coordinates: [71.2761, 38.861] },
+  { name: 'Turkmenistan', coordinates: [59.5563, 39.1212] },
+  { name: 'Uzbekistan', coordinates: [64.5853, 41.3775] },
 ];
 
 export default function AsiaMap() {
-  const [tooltipContent, setTooltipContent] = useState(''); // Tooltip uchun state
+  const [tooltipContent, setTooltipContent] = useState('');
 
   return (
     <>
@@ -37,8 +40,6 @@ export default function AsiaMap() {
         projectionConfig={{
           scale: 360,
           center: [90, 40],
-
-          // Moslashtirilgan zoom
         }}
       >
         {/* 🌍 Osiyo xaritasi */}
@@ -46,7 +47,7 @@ export default function AsiaMap() {
           {({ geographies }) =>
             geographies.map((geo) => {
               const countryName = geo.properties.name;
-              const isHighlighted = highlightedCountries.includes(countryName);
+              const fillColor = countryColors[countryName] || '#DDDCE1';
 
               return (
                 <Geography
@@ -56,12 +57,12 @@ export default function AsiaMap() {
                   onMouseLeave={() => setTooltipContent('')}
                   style={{
                     default: {
-                      fill: isHighlighted ? '#6173b9' : '#DDDCE1',
+                      fill: fillColor,
                       stroke: '#686767',
-                      outline: 'red',
+                      outline: 'none',
                     },
                     hover: {
-                      fill: isHighlighted ? '#364891' : '#d6e4fc',
+                      fill: '#d6e4fc',
                       stroke: '#3b82f6',
                       outline: 'none',
                     },
