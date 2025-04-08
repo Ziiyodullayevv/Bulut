@@ -41,7 +41,7 @@ export default function DriwerComponent() {
             {t('header.menu')}
           </DrawerTitle>
           <DrawerDescription>
-            <nav className='flex flex-col font-popins text-lg py-5 gap-5'>
+            <nav className='flex flex-col font-popins text-lg py-5 gap-4'>
               <a
                 className='hover:text-black bg-gray-50 px-4 h-14 flex justify-center items-center rounded-md hover:bg-gray-200 text-gray-700'
                 href='/order'
