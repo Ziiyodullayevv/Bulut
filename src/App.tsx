@@ -1,10 +1,12 @@
-import { useState, useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Loading from './components/Loading';
 import Main from './components/Main';
+import Breadcrumb from './components/BreadCrumb'; // Import qildik
 import './i18n';
 import { Toaster } from 'sonner';
+import { useEffect, useState } from 'react';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,11 +50,14 @@ export default function App() {
   return isLoading ? (
     <Loading />
   ) : (
-    <>
+    <Router>
+      {' '}
+      {/* <Router> komponentini o'rnatdik */}
       <Header />
+      <Breadcrumb /> {/* Breadcrumb komponentini qo‘shdik */}
       <Main />
       <Toaster position='bottom-right' offset={50} />
       <Footer />
-    </>
+    </Router>
   );
 }
