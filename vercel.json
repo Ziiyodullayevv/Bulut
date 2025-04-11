@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "https://www.bulutpaper.uz/:path*",
+      "destination": "https://bulutpaper.uz/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "errorPages": {
+    "404": "/404.html"
+  }
+}
