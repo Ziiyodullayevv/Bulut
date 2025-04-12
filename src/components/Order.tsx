@@ -5,6 +5,7 @@ import { t } from 'i18next';
 import MotionText from './MotionText';
 import MotionCard from './MotionCard';
 import { toast } from 'sonner';
+import { Helmet } from 'react-helmet-async';
 
 export default function Order() {
   const [formData, setFormData] = useState('');
@@ -48,7 +49,6 @@ export default function Order() {
     }
   };
 
-  // ✅ `OrderTitle` ni `useMemo` bilan optimallashtiramiz
   const OrderTitle = useMemo(
     () => (
       <MotionText
@@ -63,6 +63,25 @@ export default function Order() {
 
   return (
     <section id='order' className='py-10 sm:py-20'>
+      {/* SEO QISMI */}
+      <Helmet>
+        <title>Buyurtma berish - Bulut Paper</title>
+        <meta
+          name='description'
+          content='Bulut Paper orqali tez va oson buyurtma bering. Email kiriting va biz siz bilan bog‘lanamiz.'
+        />
+        <script type='application/ld+json'>
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ContactPage',
+            name: 'Buyurtma sahifasi',
+            description:
+              'Foydalanuvchi buyurtma berishi mumkin bo‘lgan sahifa.',
+            url: 'https://bulutpaper.uz/order',
+          })}
+        </script>
+      </Helmet>
+
       <div className='max-w-[1024px] mx-auto px-6'>
         <div className='flex justify-center'>{OrderTitle}</div>
 
