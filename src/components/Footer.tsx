@@ -1,40 +1,9 @@
 import { t } from 'i18next';
-import { Helmet } from 'react-helmet-async';
 import MotionText from './MotionText';
 
 export default function Footer() {
   return (
     <>
-      <Helmet>
-        <script type='application/ld+json'>
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'Bulut Paper',
-            url: 'https://bulutpaper.uz',
-            contactPoint: [
-              {
-                '@type': 'ContactPoint',
-                telephone: '+998771818585',
-                contactType: 'customer service',
-                availableLanguage: ['Uzbek', 'Russian'],
-              },
-              {
-                '@type': 'ContactPoint',
-                telephone: '+998771818585',
-                contactType: 'telegram',
-                url: 'http://t.me/Bulut_Officiall',
-              },
-              {
-                '@type': 'ContactPoint',
-                email: 'bulut_info@mail.ru',
-                contactType: 'email',
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
-
       <footer id='contact' className='py-10 text-black'>
         <div className='max-w-[1024px] mx-auto px-5 md:px-10'>
           <MotionText

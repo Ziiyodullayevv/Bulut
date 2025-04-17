@@ -1,7 +1,6 @@
 import About from './About';
 import Cards from './Cards';
 import Export from './Export';
-// import Export from './Export';
 import Hero from './Hero';
 import Order from './Order';
 import Question from './Question';

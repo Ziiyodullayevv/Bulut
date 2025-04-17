@@ -1,13 +1,10 @@
-import { BrowserRouter as Router } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Loading from './components/Loading';
 import Main from './components/Main';
-import Breadcrumb from './components/BreadCrumb';
 import './i18n';
 import { Toaster } from 'sonner';
 import { useEffect, useState } from 'react';
-import { HelmetProvider } from 'react-helmet-async';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,14 +48,11 @@ export default function App() {
   return isLoading ? (
     <Loading />
   ) : (
-    <HelmetProvider>
-      <Router>
-        <Header />
-        <Breadcrumb />
-        <Main />
-        <Toaster position='bottom-right' offset={50} />
-        <Footer />
-      </Router>
-    </HelmetProvider>
+    <>
+      <Header />
+      <Main />
+      <Toaster position='bottom-right' offset={50} />
+      <Footer />
+    </>
   );
 }
