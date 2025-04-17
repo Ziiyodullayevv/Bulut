@@ -1,21 +1,8 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.bulutpaper.uz"
-        }
-      ],
-      "destination": "https://bulutpaper.uz/:1",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/index.html"
     }
   ]
 }
