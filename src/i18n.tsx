@@ -14,7 +14,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: localStorage.getItem('lang') || 'uz', // Boshlang‘ich til
+  lng: localStorage.getItem('lang') || 'ru', // Boshlang‘ich til
   interpolation: { escapeValue: false },
   react: { useSuspense: false },
 });

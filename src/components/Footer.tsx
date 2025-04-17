@@ -15,13 +15,13 @@ export default function Footer() {
             contactPoint: [
               {
                 '@type': 'ContactPoint',
-                telephone: '+998953247070',
+                telephone: '+998771818585',
                 contactType: 'customer service',
                 availableLanguage: ['Uzbek', 'Russian'],
               },
               {
                 '@type': 'ContactPoint',
-                telephone: '+998953247070',
+                telephone: '+998771818585',
                 contactType: 'telegram',
                 url: 'http://t.me/Bulut_Officiall',
               },
@@ -54,7 +54,7 @@ export default function Footer() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                +998953247070
+                +998771818585
               </a>
             </div>
 
@@ -68,7 +68,7 @@ export default function Footer() {
                 className='text-lg hover:text-[#495aa1]'
                 href='http://t.me/Bulut_Officiall'
               >
-                +998953247070
+                +998771818585
               </a>
             </div>
 
