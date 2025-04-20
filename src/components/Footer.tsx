@@ -19,7 +19,7 @@ export default function Footer() {
               </MotionText>
               <a
                 className='text-lg hover:text-[#495aa1]'
-                href='https://wa.me/998953247070'
+                href='https://wa.me/998771818585'
                 target='_blank'
                 rel='noopener noreferrer'
               >
