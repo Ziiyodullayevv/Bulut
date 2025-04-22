@@ -35,7 +35,7 @@ export default function Footer() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-lg hover:text-[#495aa1]'
-                href='http://t.me/Bulut_Officiall'
+                href='http://t.me/+998771818585'
               >
                 +998771818585
               </a>
