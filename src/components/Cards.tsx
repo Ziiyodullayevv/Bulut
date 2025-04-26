@@ -15,7 +15,7 @@ export default function Cards() {
           >
             <img
               className='w-full group-hover:scale-110 transition-transform h-full object-cover'
-              src='/2.jpg'
+              src='/6.jpg'
               alt='Bulut Paper maxsus dizayndagi qog‘oz mahsuloti'
             />
           </MotionCard>
@@ -47,7 +47,7 @@ export default function Cards() {
           >
             <img
               className='h-full w-full group-hover:scale-110 transition-transform object-cover'
-              src='/4.jpg'
+              src='/3.jpg'
               alt='Bulut Paper ekologik toza qog‘oz mahsuloti'
             />
           </MotionCard>
